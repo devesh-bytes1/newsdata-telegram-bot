@@ -1,4 +1,5 @@
-# 📰 NewsData.io Telegram Bot
+#![1000305425](https://github.com/user-attachments/assets/b2f3cc3f-183f-4ef0-b68b-80bd0a47764d)
+ 📰 NewsData.io Telegram Bot
 
 A Telegram bot that delivers **Latest News** and **Cryptocurrency News** directly to your Telegram chats using the [NewsData.io API](https://newsdata.io). Get instant access to breaking news and crypto updates with interactive inline keyboards.
 
