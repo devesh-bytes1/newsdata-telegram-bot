@@ -7,12 +7,13 @@ from .config import settings
 
 logger = logging.getLogger(__name__)
 
-LATEST_URL = "https://local.newsdata.io/api/1/latest"
-CRYPTO_URL = "https://local.newsdata.io/api/1/crypto"
+LATEST_URL = "https://newsdata.io/api/1/latest"
+CRYPTO_URL = "https://newsdata.io/api/1/crypto"
 
 
 def fetch_news(endpoint: str, params: dict) -> List[Dict]:
-    
+    # Synchronous request; fine for this demo's low traffic. For higher
+    # concurrency, swap in an async client (e.g. httpx.AsyncClient).
     try:
         resp = requests.get(endpoint, params=params, timeout=10)
         resp.raise_for_status()
